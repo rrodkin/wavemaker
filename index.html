@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 7]><html lang="en" class="ie7"><![endif]-->
+<!--[if IE 8]><html lang="en" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><html lang="en"><![endif]-->
+<!--[if !IE]><html lang="en-US"><![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>WaveMaker || Real-time Generative Art</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/raphael.js"></script>
+<style type="text/css">
+html{height:100%;margin:0;padding:0}
+body{
+	background-color:#000;
+	font-size:100%;
+	line-height:1.2em;
+    color: #999;
+    min-height:100%;
+    margin:0;padding:0;
+}
+
+#data{
+	position:absolute;
+	visibility:visible;
+	bottom:0;
+	right:0;
+	height:50px;
+	width:500px;
+	margin:10px;
+	background:rgba(20,20,20,.5);
+	color:#006660;
+	font-size:12px;
+	font-family:arial;
+	z-index:10000;
+}
+
+</style>
+</head>
+<body id="landing">
+<div id="holder"></div>
+<div id="data"></div>
+<canvas id="canv" height="1" width="1" style="top:-200px;margin:0;padding:0;"></canvas>
+<script type="text/javascript" src="js/wavemaker.js"></script>
+</body>
+</html>
